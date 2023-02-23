@@ -3,6 +3,7 @@ const { faker } = require('@faker-js/faker');
 
 const seed = async () => {
   try {
+      await db.sync({ force: true });
       //series
       const seriesName = faker.company.bsBuzz();
       const image = faker.image.abstract();

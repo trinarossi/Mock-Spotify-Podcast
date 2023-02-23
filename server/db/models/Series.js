@@ -23,4 +23,4 @@ const Series = db.define("series", {
   }
 });
 
-module.exports = { Series };
+module.exports = Series;

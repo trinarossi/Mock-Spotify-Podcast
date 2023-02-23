@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const { STRING, CHAR } = Sequelize;
 const db = require('../database');
 
-const Episode = db.define("series", {
+const Episode = db.define("episode", {
   name: {
     type: STRING,
     allownull: false,
@@ -18,4 +18,4 @@ const Episode = db.define("series", {
   }
 });
 
-module.exports = { Episode };
+module.exports = Episode;
