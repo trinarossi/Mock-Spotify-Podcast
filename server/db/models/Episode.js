@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const { STRING, CHAR } = Sequelize;
+const { STRING, CHAR, BOOLEAN } = Sequelize;
 const db = require('../database');
 
 const Episode = db.define("episode", {
@@ -15,6 +15,16 @@ const Episode = db.define("episode", {
   },
   imgUrl: {
     type: STRING
+  },
+  dateUploaded: {
+    type: STRING
+  },
+
+  length: {
+    type: STRING
+  },
+  explicit: {
+    type: BOOLEAN
   }
 });
 
