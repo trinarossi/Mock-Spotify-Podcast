@@ -6,7 +6,7 @@ router.get("/:id", async (req, res, next) => {
     res.send(
       await Episode.findByPk(req.params.id, {
         include: {
-          model: Series,
+          model: Series
         },
       })
     );
