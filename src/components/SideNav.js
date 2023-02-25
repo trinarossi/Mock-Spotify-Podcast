@@ -1,22 +1,23 @@
 import React from "react";
+import styles from "../styles/SideNav.module.css";
 
 const SideNav = () => {
   return (
     <>
-      <img className="logo" src="Spotify_Logo_RGB_White.png" />
+      <img className={styles.logo} src="Spotify_Logo_RGB_White.png" />
       <section>
-        <div className="top-3">
+        <div className={styles.top3}>
           <p>Home</p>
           <p>Search</p>
           <p>Your List</p>
         </div>
-        <div className="bottom-3">
+        <div className={styles.bottom3}>
           <p>Create Playlist</p>
           <p>Liked Songs</p>
           <p>Your Episodes</p>
         </div>
       </section>
-      <section className="my-playlists">
+      <section className={styles.myPlaylists}>
         <ul>
           <li>Favorite Classical Songs</li>
           <li>How Insensitive</li>

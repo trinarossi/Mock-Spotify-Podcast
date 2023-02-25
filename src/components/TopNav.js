@@ -1,16 +1,17 @@
 import React from "react";
+import styles from "../styles/TopNav.module.css";
 
 const TopNav = () => {
   return (
-    <section className="topnav-container">
-      <div className="topnav-left">
+    <section className={styles.topNavContainer}>
+      <div className={styles.left}>
         <a></a>
         <a></a>
         <h2></h2>
       </div>
-      <div className="topnav-user">
-        <div className="user-container">
-          <img src="spotify-profile-pic.jpg" />
+      <div className={styles.user}>
+        <div className={styles.userContainer}>
+          <img src="spotify-profile-pic.jpg" className={styles.profilePic}/>
           <p>Trina</p>
           {/* icon */}
         </div>

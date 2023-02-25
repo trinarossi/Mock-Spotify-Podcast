@@ -1,23 +1,24 @@
 import React from "react";
+import styles from "../styles/BottomPlayer.module.css";
 
 const BottomPlayer = () => {
   return (
-    <section className="player-container">
-      <div className="audio-selection">
-        <img src="" className="player-img" />
-        <p className="title">Podcast Title</p>
-        <p className="series">Podcast Series</p>
+    <section className={styles.playerContainer}>
+      <div className={styles.audioSelection}>
+        <img src="" className={styles.playerImg} />
+        <p className={styles.title}>Podcast Title</p>
+        <p className={styles.series}>Podcast Series</p>
         {/* heart icon */}
       </div>
-      <section className="player-middle">
-        <div className="player-buttons"></div>
-        <div className="player-bar">
+      <section className={styles.playerMiddle}>
+        <div className={styles.playerButtons}></div>
+        <div className={styles.playerBar}>
           <p>0:00</p>
-          <div className="bar-container"></div>
+          <div className={styles.barContainer}></div>
           <p>0:00</p>
         </div>
       </section>
-      <div className="player-right-side"></div>
+      <div className={styles.playerRightSide}></div>
     </section>
   );
 };
