@@ -1,0 +1,9 @@
+.topNavContainer {
+  background-color: #121212;
+  color: white;
+  border: 2px solid #b3b3b3;
+  width: 100%;
+  height: 75px;
+  /* position: sticky;
+  top: 0; */
+}

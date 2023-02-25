@@ -3,7 +3,7 @@ import styles from "../styles/SideNav.module.css";
 
 const SideNav = () => {
   return (
-    <>
+    <section className={styles.sideNavContainer}>
       <img className={styles.logo} src="Spotify_Logo_RGB_White.png" />
       <section>
         <div className={styles.top3}>
@@ -46,7 +46,7 @@ const SideNav = () => {
         </ul>
       </section>
       <p>Install App</p>
-    </>
+    </section>
   );
 };
 

@@ -10,16 +10,18 @@ import { ShowEpisode } from "./index";
 
 const Main = () => {
   return (
-      <div>
-        <TopNav />
-        <SideNav />
+      <>
+        <div className="navs">
+          <SideNav />
+          <TopNav />
+        </div>
         <BottomPlayer />
         <Routes>
           <Route path="/" element={<PodcastHome />}></Route>
           <Route path="/series/:id" element={<ShowSeries />}></Route>
           <Route path="/episode/:id" element={<ShowEpisode />}></Route>
         </Routes>
-      </div>
+      </>
   );
 };
 
